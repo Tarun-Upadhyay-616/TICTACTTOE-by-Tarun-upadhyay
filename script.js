@@ -23,9 +23,9 @@ const checkwin = () => {
         if (place1 != "" || place2 != "" || place3 != "") {
 
             if (place1 == place2 && place2 == place3) {
-                place1w.style.backgroundColor = "yellow"
-                place2w.style.backgroundColor = "yellow"
-                place3w.style.backgroundColor = "yellow"
+                place1w.style.color = "yellow"
+                place2w.style.color = "yellow"
+                place3w.style.color = "yellow"
                 uppermsg.innerText = "You have Won";
                 slots.forEach((slot) => {
                     slot.disabled = true;
