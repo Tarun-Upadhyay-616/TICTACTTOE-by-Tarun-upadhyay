@@ -56,15 +56,15 @@ slots.forEach((slot) => {
             turn = false;
             uppermsg.innerText = "Turn for O"
             slot.disabled = true
-            checkwin()
             checkdraw()
+            checkwin()
         } else {
             slot.innerText = "O";
             turn = true;
             uppermsg.innerText = "Turn for X"
             slot.disabled = true
-            checkwin()
             checkdraw()
+            checkwin()
         }
     })
 
@@ -72,7 +72,7 @@ slots.forEach((slot) => {
 
 const reset = () => {
     slots.forEach((slot) => {
-        slot.style.backgroundColor = "#28abcf"
+        slot.style.color = "#28abcf"
         slot.innerText = ""
         slot.disabled = false
         turn = true
